@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    docker {
-      image 'golang:windowsservercore-1809'
+    dockerfile {
+      filename 'Dockerfile'
     }
 
   }
