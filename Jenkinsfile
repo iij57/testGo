@@ -1,9 +1,15 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'golang'
+    }
+
+  }
   stages {
-    stage('') {
+    stage('Build') {
       steps {
-        timestamps()
+        sh 'go get -u github.com/julienschmidt/httprouter'
+        sh 'go build .'
       }
     }
 
