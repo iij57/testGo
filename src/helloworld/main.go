@@ -1,0 +1,13 @@
+package helloworld
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Printf(hello())
+}
+
+func hello() string {
+	return "Hello!!!"
+}
