@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'go_build'
+    }
+
+  }
   stages {
     stage('Build') {
       steps {
