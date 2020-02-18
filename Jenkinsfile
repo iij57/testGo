@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        bat 'cd src/main && go test .'
+      }
+    }
+
   }
 }
