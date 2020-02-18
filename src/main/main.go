@@ -2,18 +2,13 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	for {
-		fmt.Println(hello())
-		time.Sleep(10 * time.Second)
-	}
-
+	fmt.Println(Hello())
 }
 
-func hello() string {
+func Hello() string {
 	return "Hello!!!"
 
 }
