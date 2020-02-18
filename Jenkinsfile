@@ -15,7 +15,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        bat 'cd src/main && go test .'
+        bat 'cd src/test && go test'
       }
     }
 
