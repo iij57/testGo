@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('PreTest') {
       steps {
-        bat 'cd src/main && go build .'
+        bat 'go get -u github.com/julienschmidt/httprouter'
       }
     }
 
