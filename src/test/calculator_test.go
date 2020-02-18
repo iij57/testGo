@@ -1,14 +1,14 @@
-package main
+package test
 
 import (
-	"main"
+	"calc"
 	"testing"
 )
 
 func TestHello(t *testing.T) {
-	h := main.Hello()
+	result := calc.Sum(2, 3)
 
-	if h != "hello!!!" {
+	if result != 5 {
 		t.Error("Wrong Result")
 	}
 }
